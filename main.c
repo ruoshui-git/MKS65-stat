@@ -9,7 +9,7 @@ int main(void)
     puts("File: "F);
     stat(F, &md);
     printf("size: %ld\n", md.st_size);
-    printf("mode: %d\n", md.st_mode);
+    printf("mode: %o\n", md.st_mode);
     printf("last accessed: %s\n", ctime(&md.st_atime));
 
     return 0;
